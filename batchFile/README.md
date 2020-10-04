@@ -14,7 +14,7 @@ Batch File (`.bat`) is a script file in DOS, OS/2 and Microsoft Windows. It cons
 
 ### [`.ps1`](sameFilesNameToSingleFolder.ps1)
 
-PowerShell (`.PS1`) is a script, or "cmdlet," used by Windows PowerShell, a Windows shell program built on Microsoft's . NET Framework. It contains a series of commands written in the PowerShell scripting language.
+PowerShell (`.ps1`) is a script, or "cmdlet," used by Windows PowerShell, a Windows shell program built on Microsoft's . NET Framework. It contains a series of commands written in the PowerShell scripting language.
 
 ### [`.sh`](sameFilesNameToSingleFolder.sh)
 
@@ -25,7 +25,7 @@ Shell script (`.sh`) is a computer program designed to be run by the Unix shell,
 | .ext   | Windows | ReactOS | DOS | MacOS | Linux | BSD | BeOS/Haiku | Temple OS |
 | ------ | :-----: | :-----: | :-: | :---: | :---: | :-: | :--------: | :-------: |
 | `.bat` |   ✅    |   ✅    | ✅  |  👥   |  👥   | 👥  |     🤔     |    👀     |
-| `.ps1` |   ✅    |   🤔    | 🤔  |  📥   |  📥   | ❌  |     ❌     |    👀     |
+| `.ps1` |   ✅    |   🤔    | 🤔  |  📥   |  📥   | 👥  |     🤔     |    👀     |
 | `.sh`  |   👥    |   👥    | ❌  |  ✅   |  ✅   | ✅  |     ✅     |    👀     |
 
 ### Legend
@@ -65,7 +65,7 @@ You can try to download the source code via:
 * PowerScript : https://raw.githubusercontent.com/nattadasu/thenewbieclub/master/batchFile/sameFilesNameToSingleFolder.ps1
 * Shell : https://raw.githubusercontent.com/nattadasu/thenewbieclub/master/batchFile/sameFilesNameToSingleFolder.sh
 
-### GitHub Raw Content
+### Fast&period;io CDN
 * Batch : https://natsu-tnc.imfast.io/batchFile/sameFilesNameToSingleFolder.bat
 * PowerScript : https://natsu-tnc.imfast.io/batchFile/sameFilesNameToSingleFolder.ps1
 * Shell : https://natsu-tnc.imfast.io/batchFile/sameFilesNameToSingleFolder.sh
