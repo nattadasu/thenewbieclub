@@ -2,8 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents | Natsu TNC Repo</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Home | Natsu TNC Repo</title>
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
@@ -14,32 +13,39 @@
 
     <script src="https://kit.fontawesome.com/b443b76eae.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
+    <!-- #region : HEA -->
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="index.html">Natsu TNC Repo</a>
+                <a class="uk-navbar-item uk-logo" href="index">Natsu TNC Repo</a>
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                    <li><a href="cardDeliveries.html"><i class="fas fa-credit-card"></i>&nbsp;Cards</a></li>
+                    <li class="uk-active"><a href="index" title="Home" uk-tooltip="title: Home; pos: bottom"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../cardDeliveries" title="Cards" uk-tooltip="title: Cards; pos: bottom"><i class="fas fa-credit-card"></i></a></li>
                     <li>
-                        <a href="#"><i class="fas fa-terminal"></i>&nbsp;Script</a>
+                        <a href="../script"><i class="fas fa-terminal"></i></a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#"><i class="fas fa-folder"></i>&ensp;Files to folder</a></li>
+                                <li class="uk-nav-header">Scripts</li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="../script/1"><i class="fas fa-folder"></i>&ensp;Files to folder</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="uk-active">
-                        <a href="docs.html"><i class="fas fa-book"></i>&nbsp;Docs</a>
+                    <li>
+                        <a href="#" class="uk-active"><i class="fas fa-book"></i></a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="docs/gifTroubleshoot.html"><i class="fas fa-tools"></i>&nbsp;Fix Unload GIF on MAL</a></li>
-                                <li><a href="docs/cardRehosting.html"><i class="fas fa-upload"></i>&nbsp;Rehost Cards</a></li>
-                                <li class="uk-active"><a href="docs.html"><i class="fas fa-ellipsis-h"></i>&nbsp;More</a></li>
+                                <li class="uk-nav-header">Documentations</li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="gifTroubleshoot"><i class="fas fa-tools"></i>&nbsp;Fix Unable to Load GIF on MAL</a></li>
+                                <li><a href="cardRehosting"><i class="fas fa-upload"></i>&nbsp;Rehosting Cards</a></li>
+                                <li class="uk-active"><a href="#"><i class="fas fa-ellipsis-h"></i>&nbsp;More</a></li>
                             </ul>
                         </div>
                     </li>
@@ -47,9 +53,11 @@
                         <a href="#" title="More Options"><i class="fas fa-bars"></i></a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">More</li>
+                                <li class="uk-nav-divider"></li>
                                 <li><a href="https://github.com/nattadasu/thenewbieclub"><i class="fab fa-github"></i>&emsp;GitHub Repo</a></li>
                                 <li><a href="https://myanimelist.net/clubs.php?cid=70668"><i class="fas fa-user-friends"></i>&ensp;MyAnimeList Club</a></li>
-                                <li><a href="https://discordapp.com/invite/Q6H6Gf7"><i class="fab fa-discord"></i>&emsp;Discord Server</a></li>
+                                <li><a href="https://discordapp.com/invite/Q6H6Gf7"><i class="fab fa-discord"></i>&emsp;TNC Discord Server</a></li>
                             </ul>
                         </div>
                     </li>
@@ -57,15 +65,24 @@
             </div>
         </nav>
     </div>
+    <!-- #endregion -->
 
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1 id="tile" class="uk-h1 tm-heading-fragment" style="color: #ffffff;">Documents</h1>
+
+
+    <!-- #region : FOO -->
+    <div class="uk-navbar-container" uk-navbar style="margin-top: 100px;">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a>Made in Indonesia with ❤. <script>document.write( new Date().getFullYear() );</script>, Natsu Tadama.</a></li>
+                <li class="uk-parent"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a>Built with UIKit, GitHub Pages, and Fontawesome.</a></li>
+            </ul>
         </div>
     </div>
-
-    <div class="uk-margin-top uk-card uk-card-default uk-card-body">
-        <p class="uk-text-lead">Create layout boxes with different backgrounds that can be arranged seamlessly next to each other.</p>
-    </div>
+    <!-- #endregion -->
 </body>
 </html>
