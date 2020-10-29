@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Natsu TNC Repo</title>
+    <title>GIF Troubleshooting | Natsu TNC Repo</title>
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
@@ -13,7 +13,7 @@
 
     <script src="https://kit.fontawesome.com/b443b76eae.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
 </head>
 <body>
@@ -21,11 +21,11 @@
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="index">Natsu TNC Repo</a>
+                <a class="uk-navbar-item uk-logo" href="../index">Natsu TNC Repo</a>
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="index" title="Home" uk-tooltip="title: Home; pos: bottom"><i class="fas fa-home"></i></a></li>
+                    <li><a href="../index" title="Home" uk-tooltip="title: Home; pos: bottom"><i class="fas fa-home"></i></a></li>
                     <li><a href="../cardDeliveries" title="Cards" uk-tooltip="title: Cards; pos: bottom"><i class="fas fa-credit-card"></i></a></li>
                     <li>
                         <a href="../script"><i class="fas fa-terminal"></i></a>
@@ -37,15 +37,15 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a href="../docs"><i class="fas fa-book"></i></a>
+                    <li class="uk-active">
+                        <a href="index"><i class="fas fa-book"></i></a>
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li class="uk-nav-header">Documentations</li>
                                 <li class="uk-nav-divider"></li>
-                                <li class="uk-active"><a href="#" class="uk-active"><i class="fas fa-tools"></i>&nbsp;Fix Unable to Load GIF on MAL</a></li>
+                                <li class="uk-active"><a href="#"><i class="fas fa-tools"></i>&nbsp;GIF Troubleshooting</a></li>
                                 <li><a href="cardRehosting"><i class="fas fa-upload"></i>&nbsp;Rehosting Cards</a></li>
-                                <li><a href="../docs"><i class="fas fa-ellipsis-h"></i>&nbsp;More</a></li>
+                                <li><a href="index"><i class="fas fa-ellipsis-h"></i>&nbsp;More</a></li>
                             </ul>
                         </div>
                     </li>
@@ -67,7 +67,146 @@
     </div>
     <!-- #endregion -->
 
+    <!-- #region : CON -->
+        <div class="uk-container uk-margin-top">
+        <h1 id="gif-troubleshooting">GIF Troubleshooting</h1>
+        <blockquote>
+            <p>Use this guide if you find any issue when placing the image to MyAnimeList</p>
+        </blockquote>
+        <h2 id="preface">Preface</h2>
+        <p>
+            Ok, in conclusion..... ngl tbh, <strong>MyAnimeList <a href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/">CDN</a> is weird as heck</strong>. They don&#39;t allow you instantly put the animated GIF of mine to be
+            rendered or load the image without the modification first...
+        </p>
+        <p>
+            I mean... look at this sh*t lol &gt;:(<br />
+            <img src="assets/gifTroubleshoot/Ugh.png" alt="shut" />
+        </p>
 
+        <p>So I made this file to help you, ofc, solving the problem that you faced when embedding the image to MyAnimeList blog, forum post, or your bio.</p>
+        <p>This troubleshooting guide can also be used for another type of animated GIF if you found MAL can&#39;t load properly the image.</p>
+        <h2 id="how-to-troubleshooting">How-To Troubleshooting</h2>
+        <ol>
+            <li>
+                Choose an animated GIF that appears corrupted, not load, or not rendered completely by MyAnimeList. For instance, I&#39;ll choose <a href="assets/gifTroubleshoot/PhotoScape.gif">my pre-modified card</a> that doesn&#39;t load:
+                <br />
+                <img src="assets/gifTroubleshoot/PhotoScape.gif" alt="yugi" /><br />
+                The size of the card is 360 px width and 240px height.
+                <blockquote>
+                    <p>NOTE: If you have GIF file and it&#39;s way too big, you can resize it first using PhotoScape X for Windows 10, or PhotoScape for other Windows versions.</p>
+                </blockquote>
+            </li>
+            <li>
+                Go to <a href="https://ezgif.com">ezgif</a> (<a href="https://ezgif.com">https://ezgif.com</a>), and choose <a href="https://ezgif.com/optimize">GIF optimizer</a>. The purpose of optimizing an animated GIF is to reduce the size of a file with the quality of an image is reduced a little bit.
+            </li>
+            <li>
+                Upload the image, or if you have uploaded it to an image hosting, you can copy the image URL and paste it into the box. In this case, I&#39;ve uploaded my card into personal GitHub repo, and place the image URL into the box, and tap <code>Upload!</code>.<br />
+                <img src="assets/gifTroubleshoot/step1.png" alt="upload" /><br />
+                Keep in mind that the maximum file size is 35 MB.
+            </li>
+            <li>
+                Scroll a little bit, keep the optimization method to default (<code>Lossy GIF</code>), but increase the &quot;Compression level&quot; up to 52-70. Also, the more level increased will affect the quality. So, please follow my step, for the safest one.<br />
+                <img src="assets/gifTroubleshoot/step2.png" alt="menu" /><br />
+                Then, tap <code>Optimize GIF!</code> below the slider
+            </li>
+            <li>
+                If optimizer finished optimized the image, click <code>Save</code>, and you done. OwO<br />
+                <img src="assets/gifTroubleshoot/step3.png" alt="save" /><br />
+                Doesn&#39;t work? Open Context menu on save button with clicking right button on your mouse, and click
+                <code>Save Link as...</code>
+            </li>
+        </ol>
+        <p>
+            The result? Here:<br />
+            <img src="assets/gifTroubleshoot/ezgif.gif" alt="optimized" /><br />
+            Comparison? here lol<br />
+            <img src="assets/gifTroubleshoot/ezgif.gif" alt="optimized" /><img src="assets/gifTroubleshoot/PhotoScape.gif" alt="yugi" />
+        </p>
+
+        <p>As you can see here, the optimized version is having a lot of noise compared by &quot;original&quot; one... <del>but welp, I don&#39;t judge about that lmao</del>.</p>
+        <p>
+            And here the result on forum:<br />
+            <img src="assets/gifTroubleshoot/final.png" alt="final" />
+        </p>
+
+        <p>
+            Anyways, those all the steps lol. But, if you facing the same issue, first, you need to check... &quot;is [x] site loaded perfectly on MAL?&quot;<br />
+            In this case, I&#39;d say... well MAL goes weird again at this one ;-;
+        </p>
+        <p>Here are some sites I&#39;ve tested to test &quot;is [x] site loaded perfectly on MAL?&quot;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Site</th>
+                    <th style="text-align: center;">Does It Works?</th>
+                    <th style="text-align: center;">Second Check</th>
+                    <th style="text-align: center;">Third Check</th>
+                    <th style="text-align: center;">Fourth Check</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">GitHub</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">s-ul.eu</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes, but loads slower</td>
+                    <td style="text-align: center;">Yes, no issue</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Discord CDN</td>
+                    <td style="text-align: center;">No, But it should be work lol</td>
+                    <td style="text-align: center;">Still, No</td>
+                    <td style="text-align: center;">nah</td>
+                    <td style="text-align: center;">OMG, IT&#39;S ALIVE</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">imgur</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">FunkyIMG</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">No</td>
+                    <td style="text-align: center;">No</td>
+                    <td style="text-align: center;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">ImageShack</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">PostImage</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                    <td style="text-align: center;">Yes</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <strong>First submission</strong>: 16 April 2020, 10:46 PM GMT+7<br />
+            <strong>Second</strong>: 17 April 2020, 11:22 AM GMT+7<br />
+            <strong>Third</strong>: 21 April 2020, 4:00 PM GMT+7<br />
+            <strong>Fourth</strong>: 21 May 2020, 1:31 PM GMT+7
+        </p>
+        <p>
+            <strong><a href="https://myanimelist.net/blog.php?eid=833627">Testing blog</a></strong>
+        </p>
+    </div>
+    <!-- #endregion -->
 
     <!-- #region : FOO -->
     <div class="uk-navbar-container" uk-navbar style="margin-top: 100px;">

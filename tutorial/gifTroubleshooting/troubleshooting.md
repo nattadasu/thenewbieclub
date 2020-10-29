@@ -1,3 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th><span style="font-size: 300%;">Attention!</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>This file was not maintained again since October 29, 2020. Please to refer it trough <a href="https://tnc.nattadasu.my.id/docs/gifTroubleshoot">this new page</a>, thanks.
+        </tr>
+    </tbody>
+</table>
+<br/>
+<br/>
+
 # GIF Troubleshooting
 > Use this guide if you find any issue when placing the image to MyAnimeList
 
